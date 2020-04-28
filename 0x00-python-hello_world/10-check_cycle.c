@@ -2,20 +2,27 @@
 
 int check_cycle(listint_t *list)
 {
-	int head_n;
-	if(list == NULL)
+	listint_t *start;
+	listint_t *ahead;
+	if(list == NULL || list->next == NULL)
 	{
 		return (0);
 	}
 
-	head_n = list->n;
-	while(list->next != NULL)
+	ahead = list->next;
+	while (ahead->next != NULL)
 	{
-		if (list->next->n == head_n)
+		start = list;
+		while (start->next != ahead)
 		{
-			return (1);
+			if (ahead->next == start)
+			{
+				return (1);
+			}
+			start = start->next;
 		}
-		list = list->next;
+
+		ahead = ahead->next;
 	}
 	return (0);
 }
