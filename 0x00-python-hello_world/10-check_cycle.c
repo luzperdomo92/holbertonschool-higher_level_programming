@@ -9,27 +9,25 @@
  **/
 int check_cycle(listint_t *list)
 {
-	listint_t *start;
-	listint_t *ahead;
-	if(list == NULL || list->next == NULL)
+	listint_t *ahead = list;
+	listint_t *behind = list;
+
+	if (list == NULL || list->next == NULL)
 	{
 		return (0);
 	}
 
-	ahead = list->next;
-	while (ahead->next != NULL)
+	ahead = list->next->next;
+	behind = behind->next;
+	while (ahead != NULL && ahead->next != NULL)
 	{
-		start = list;
-		while (start->next != ahead)
+		if (ahead == behind)
 		{
-			if (ahead->next == start)
-			{
-				return (1);
-			}
-			start = start->next;
+			return (1);
 		}
-
-		ahead = ahead->next;
+		ahead = ahead->next->next;
+		behind = behind->next;
 	}
+
 	return (0);
 }
