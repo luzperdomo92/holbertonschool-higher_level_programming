@@ -5,3 +5,4 @@ for comb1 in range(10):
             print("{}{}".format(comb1, comb2), end="")
         else:
             print("{}{}, ".format(comb1, comb2), end="")
+print("")
