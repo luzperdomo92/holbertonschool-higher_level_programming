@@ -2,5 +2,5 @@
 if __name__ == "__main__":
     from hidden_4 import *
     for files in dir():
-        if files[1] != "__":
+        if files[:2] != "__":
             print("{}".format(files)
