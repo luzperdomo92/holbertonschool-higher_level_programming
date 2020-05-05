@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import printcool
+__import__("cool")
