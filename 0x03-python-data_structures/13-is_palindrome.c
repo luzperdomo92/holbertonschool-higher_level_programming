@@ -26,8 +26,8 @@ int is_palindrome(listint_t **head)
 	iterable_node = *head;
 	while (iterable_node != NULL)
 	{
-		if(iterable_node->n != inverse_nodes->n)
-		return (0);
+		if (iterable_node->n != inverse_nodes->n)
+			return (0);
 		iterable_node = iterable_node->next;
 		inverse_nodes = inverse_nodes->next;
 	}
@@ -44,11 +44,12 @@ int is_palindrome(listint_t **head)
 listint_t *add_node(listint_t **head, int n)
 {
 	listint_t *new;
+
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
 
-  new->n = n;
+	new->n = n;
 	new->next = *head;
 	*head = new;
 
