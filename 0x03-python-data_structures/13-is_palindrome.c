@@ -12,26 +12,32 @@ listint_t *add_node(listint_t **head, int n);
 int is_palindrome(listint_t **head)
 {
 	listint_t *iterable_node = *head;
-	listint_t *inverse_nodes;
+	listint_t *inverse_node;
+	listint_t *inverse_node_disposable;
+	int size, i;
 
 	if (iterable_node == NULL)
 		return (1);
 
 	while (iterable_node != NULL)
 	{
-		add_node(&inverse_nodes, iterable_node->n);
+		add_node(&inverse_node, iterable_node->n);
 		iterable_node = iterable_node->next;
+		size++;
 	}
 
+	inverse_node_disposable = inverse_node;
 	iterable_node = *head;
-	while (iterable_node != NULL)
+	for (i = 0; i < size / 2; i++)
 	{
-		if (iterable_node->n != inverse_nodes->n)
+		if (iterable_node->n != inverse_node->n)
+		{
+			free_listint(inverse_node_disposable);
 			return (0);
+		}
 		iterable_node = iterable_node->next;
-		inverse_nodes = inverse_nodes->next;
+		inverse_node = inverse_node->next;
 	}
-
 	return (1);
 }
 
