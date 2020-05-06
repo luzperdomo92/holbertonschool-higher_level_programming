@@ -13,7 +13,7 @@ int is_palindrome(listint_t **head)
 {
 	listint_t *iterable_node = *head;
 	int i;
-	int size = 0; 
+	int size = 0;
 	int elements[1024];
 
 	if (iterable_node == NULL)
@@ -32,7 +32,7 @@ int is_palindrome(listint_t **head)
 		{
 			return (0);
 		}
-		
+
 	}
 	return (1);
 }
