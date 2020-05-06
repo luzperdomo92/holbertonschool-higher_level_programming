@@ -28,7 +28,7 @@ int is_palindrome(listint_t **head)
 
 	inverse_node_disposable = inverse_node;
 	iterable_node = *head;
-	for (i = 0; i < size / 2; i++)
+	for (i = 0; i <= size / 2; i++)
 	{
 		if (iterable_node->n != inverse_node->n)
 		{
