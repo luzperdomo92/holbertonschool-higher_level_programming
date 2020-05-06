@@ -38,7 +38,7 @@ int is_palindrome(listint_t **head)
 /**
  * add_node - adds a new node at the beginning of a listint_t list
  * @head: start of the linked list
- * @str: string to be set as attribute of the next head.
+ * @n: int to be set as attribute of the next head.
  * Return: the number of nodes.
  */
 listint_t *add_node(listint_t **head, int n)
