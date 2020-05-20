@@ -8,7 +8,7 @@ class Square:
         """ 
         Constructor for Square class. 
   
-        Parameters: 
-           size (int): size of the square.
+        Keyword Arguments:
+            size {int} -- size of the Square (default: {0}).
         """
         self.__size = size
