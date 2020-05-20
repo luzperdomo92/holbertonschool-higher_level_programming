@@ -3,9 +3,9 @@
 
 
 class Square:
-    """Class to handle square objects"""
+    """Class Square"""
     def __init__(self, size=0):
-        """ 
+        """[summary]
         Constructor for Square class. 
   
         Keyword Arguments:
