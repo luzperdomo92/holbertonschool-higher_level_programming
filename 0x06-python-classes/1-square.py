@@ -6,8 +6,8 @@ class Square:
     """Class Square"""
     def __init__(self, size=0):
         """[summary]
-        Constructor for Square class. 
-  
+        Constructor for Square class.
+
         Keyword Arguments:
             size {int} -- size of the Square (default: {0}).
         """
