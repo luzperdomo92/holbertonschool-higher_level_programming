@@ -1,0 +1,44 @@
+Using ``print_square``
+-------------------
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+Now use it:
+
+    >>> text_indentation("Hello?")
+        Hello?
+        <BLANKLINE>
+
+     >>> text_indentation("   Hi there.")
+        Hi there.
+        <BLANKLINE> 
+
+    >>> text_indentation("          ")
+
+    >>> text_indentation("Holis.   ")
+    Holis.
+    <BLANKLINE>
+
+    >>> text_indentation("    and now what.    This is crazy.   ")
+    and now what.
+    <BLANKLINE>
+    This is crazy.
+    <BLANKLINE>
+
+    >>> text_indentation("A cat \n new cat.")
+    A sneaky 
+    new line.
+    <BLANKLINE>
+
+    >>> text_indentation(5)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+ >>> text_indentation({"one": 1, "two": 2})
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
