@@ -1,5 +1,13 @@
 #!/usr/bin/python3
+"""text_indentation mdoule
+"""
+
+
 def text_indentation(text):
+    """text_indentation function
+        prints a text with 2 new lines after each of these
+        characters: ., ? and :
+    """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
