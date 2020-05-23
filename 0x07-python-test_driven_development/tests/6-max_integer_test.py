@@ -76,5 +76,14 @@ class TestMaxInteger(unittest.TestCase):
         with self.assertRaises(TypeError):
             max_integer(None)
 
+    def test_none_in_list(self):
+        """Test max value for none"""
+        data = [None]
+        result = max_integer(data)
+        self.assertEqual(result, None)
+
+    def test_doc_exist(self):
+        self.assertTrue(len(max_integer.__doc__) > 1)
+
 if __name__ == '__main__':
     unittest.main()
