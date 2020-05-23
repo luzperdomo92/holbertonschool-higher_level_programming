@@ -16,7 +16,7 @@ def matrix_divided(matrix, div):
     if not matrix:
         raise TypeError(error_message)
 
-    if not isinstance(matrix, list):
+    if type(matrix) is not list:
         raise TypeError(error_message)
 
     for lists in matrix:
@@ -40,4 +40,10 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
-    return [[round(number / div, 2) for number in lists] for lists in matrix]
+    return list(map(
+        lambda lists:
+            list(map(
+                lambda number:
+                    round(number / div, 2),
+                lists)),
+        matrix))
