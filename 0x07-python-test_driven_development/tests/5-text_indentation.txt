@@ -7,14 +7,15 @@ Using ``print_square``
 Now use it:
 
     >>> text_indentation("Hello?")
-        Hello?
-        <BLANKLINE>
+    Hello?
+    <BLANKLINE>
 
-     >>> text_indentation("   Hi there.")
-        Hi there.
-        <BLANKLINE> 
+    >>> text_indentation("   Hi there.")
+    Hi there.
+    <BLANKLINE>
 
     >>> text_indentation("          ")
+
 
     >>> text_indentation("Holis.   ")
     Holis.
@@ -26,16 +27,12 @@ Now use it:
     This is crazy.
     <BLANKLINE>
 
-    >>> text_indentation("A cat \n new cat.")
-    A sneaky 
-    new line.
-    <BLANKLINE>
 
     >>> text_indentation(5)
     Traceback (most recent call last):
     TypeError: text must be a string
 
- >>> text_indentation({"one": 1, "two": 2})
+    >>> text_indentation({"one": 1, "two": 2})
     Traceback (most recent call last):
     TypeError: text must be a string
 
