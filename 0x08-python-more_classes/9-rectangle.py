@@ -92,5 +92,5 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """ methot to compare the values"""
+        """ method to return a Rectangle with the same width and height"""
         return Rectangle(size, size)
