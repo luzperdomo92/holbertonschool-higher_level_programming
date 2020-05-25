@@ -19,11 +19,6 @@ class Rectangle:
         else:
             return rect_2
 
-    @classmethod
-    def square(cls, size=0):
-        """ methot to compare the values"""
-        return cls(size, size)
-
     def __init__(self, width=0, height=0):
         """
         Constructor for rectangle class.
@@ -94,3 +89,8 @@ class Rectangle:
         """ method that deletes an instance"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+
+    @classmethod
+    def square(cls, size=0):
+        """ methot to compare the values"""
+        return cls(size, size)
