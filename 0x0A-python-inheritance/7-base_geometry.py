@@ -2,7 +2,7 @@
 """Class BaseGeometry"""
 
 
-class BaseGeometry:
+class BaseGeometry():
     """Class BaseGeometry
     Raises:
     Exception: area(self) method not implemented.
