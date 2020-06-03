@@ -20,5 +20,3 @@ class Rectangle(BaseGeometry):
         """method to return  a string"""
         string = "[Rectangle] {}/{}".format(self.__width, self.__height)
         return string
-
-
