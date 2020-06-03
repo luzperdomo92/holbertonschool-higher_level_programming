@@ -8,4 +8,4 @@ def read_file(filename=""):
     and print it in the STOUT
     """
     with open(filename, mode='r', encoding='utf-8') as fl:
-        print(fl.read())
+        print(fl.read(), end="")
