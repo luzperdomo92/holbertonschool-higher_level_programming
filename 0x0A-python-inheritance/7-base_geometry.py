@@ -3,7 +3,12 @@
 
 
 class BaseGeometry:
-    """Class BaseGeometry"""
+    """Class BaseGeometry
+    Raises:
+    Exception: area(self) method not implemented.
+    TypeError: if value is not 'int' type.
+    ValueError: if value is <= 0.
+    """
     def area(self):
         """ method to define an area """
         raise Exception("area() is not implemented")

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defining a new class"""
+"""Defining a new Method"""
 
 
 def lookup(obj):

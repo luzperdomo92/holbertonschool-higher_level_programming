@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Defining a new Method"""
+
+
 def is_kind_of_class(obj, a_class):
     """
     methot to check if  the object
