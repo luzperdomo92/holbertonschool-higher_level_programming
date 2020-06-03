@@ -7,5 +7,5 @@ def read_file(filename=""):
     Function to read a file
     and print it in the STOUT
     """
-    with open("my_file_0.txt", "r") as fl:
+    with open(filename, "r") as fl:
         print(fl.read())
