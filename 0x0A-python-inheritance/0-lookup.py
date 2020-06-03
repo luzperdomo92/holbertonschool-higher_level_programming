@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Defining a new class"""
+
+
 def lookup(obj):
     """
     methot that returns the
