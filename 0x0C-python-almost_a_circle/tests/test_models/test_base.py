@@ -23,7 +23,7 @@ class TestBase(unittest.TestCase):
         Base._Base__nb_objects = 0
 
     def test_id(self):
-        """test id"""
+        """test id pass"""
         self.assertEqual(self.a.id, 1)
         self.assertEqual(self.b.id, 98)
         self.assertEqual(self.c.id, 2)
