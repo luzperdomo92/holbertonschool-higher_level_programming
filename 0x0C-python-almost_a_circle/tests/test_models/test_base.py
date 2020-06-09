@@ -36,5 +36,6 @@ class TestBase(unittest.TestCase):
         """test id fail"""
         self.assertNotEqual(self.c.id, 1)
 
+
 if __name__ == '__main__':
     unittest.main()

@@ -155,7 +155,6 @@ class TestSquare(unittest.TestCase):
         print(self.a)
         self.assertEqual(expected, output.getvalue())
 
-
     def test_to_dictionary(self):
         a_dict = self.a.to_dictionary()
         expected = {"size": 2, "x": 0, "y": 0, "id": 1}
@@ -210,3 +209,6 @@ class TestSquare(unittest.TestCase):
         self.assertDictEqual(list_of_sqs[0].to_dictionary(),
                              self.a.to_dictionary())
 
+
+if '__name__' == '__main__':
+    unittest.main()

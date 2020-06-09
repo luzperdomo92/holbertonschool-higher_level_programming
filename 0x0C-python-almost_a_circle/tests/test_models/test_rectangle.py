@@ -282,5 +282,6 @@ class TestRectangle(unittest.TestCase):
         self.assertDictEqual(list_dict[0].to_dictionary(),
                              self.a.to_dictionary())
 
+
 if '__name__' == '__main__':
     unittest.main()
