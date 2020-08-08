@@ -11,7 +11,7 @@ if __name__ == "__main__":
                          db=argv[3])
     cursor = db.cursor()
     cursor.execute("""SELECT * from states WHERE name LIKE 'N%'
-                   ORDER BY states.id""")
+                   COLLATE latin1_general_cs ORDER BY states.id""")
     state_list = cursor.fetchall()
     for state in state_list:
         print(state)
