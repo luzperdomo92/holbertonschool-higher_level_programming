@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# write one that is safe from MySQL injections!
 import MySQLdb
 from sys import argv
 
