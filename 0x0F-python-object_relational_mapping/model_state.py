@@ -1,4 +1,3 @@
-  
 #!/usr/bin/python3
 """ module model_state contains class State and instance Base"""
 
