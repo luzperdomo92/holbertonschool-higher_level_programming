@@ -14,8 +14,8 @@ def find_peak(list_of_integers):
     middle = int(size_of_list / 2)
     peck_number = list_of_integers[middle]
 
-    if list_of_integers[middle - 1] <= peck_number and
-       peck_number >= list_of_integers[middle + 1]:
+    if (list_of_integers[middle - 1] <= peck_number
+        and peck_number >= list_of_integers[middle + 1]):
         return peck_number
     elif list_of_integers[middle - 1] > peck_number:
         return find_peak(list_of_integers[:middle])
